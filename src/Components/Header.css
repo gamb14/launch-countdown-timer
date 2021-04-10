@@ -1,0 +1,19 @@
+header {
+}
+
+Header h1 {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 7px;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 450px) {
+  header h1 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+  }
+}
