@@ -10,7 +10,7 @@ const Card = () => {
   
   useEffect(() => {
 
-    let interval = setInterval( () => {
+    setInterval( () => {
 
       let launchDate = futureDate - new Date().getTime()
   
@@ -39,7 +39,7 @@ const Card = () => {
 
        setLaunchTimer(timer)
     }, [1000])
-    
+
   }, [])
        
   return (
