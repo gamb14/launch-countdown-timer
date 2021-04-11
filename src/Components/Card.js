@@ -5,11 +5,14 @@ import {useState, useEffect} from 'react'
 const Card = () => {
   
   const [launchTimer, setLaunchTimer] = useState([])
-  const currentDate = new Date('April 10, 2021 11:30:00')
-  const futureDate = currentDate.getTime() + (14 * 24 * 60 * 60 * 1000)
+  
+ 
   
   useEffect(() => {
 
+    const currentDate = new Date('April 10, 2021 11:30:00')
+    const futureDate = currentDate.getTime() + (14 * 24 * 60 * 60 * 1000)
+    
     setInterval( () => {
 
       let launchDate = futureDate - new Date().getTime()
